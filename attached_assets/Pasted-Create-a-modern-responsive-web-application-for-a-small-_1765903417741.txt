@@ -1,0 +1,12 @@
+Create a modern, responsive web application for a small cafe called "Cozy Brew Cafe" using Next.js 14+ with TypeScript, Tailwind CSS for styling, React Context API for cart management, and MongoDB with Mongoose for the backend database. The app is a demo without real payments or authentication—guests can browse products, add to cart, place orders, and leave reviews after simulating a purchase. Focus on a sleek, 2025-inspired UI/UX: use glassmorphism effects, subtle animations (with Framer Motion), dark/light mode toggle (default light with warm cafe tones like beige, brown, orange), responsive design (mobile-first), high-contrast accessibility, and intuitive navigation.
+Key features:
+
+Products Page (Home): Display products categorized by Coffee, Sandwich, Pizza, Fries, Burger, and Mocktails. Each category as an expandable accordion or tab. Product cards show name, description, price, image (use placeholders like Unsplash coffee images), and "Add to Cart" button. Include category filters and search bar. Mock data: 3-5 items per category (e.g., Coffee: Espresso $4, Latte $5; Sandwich: Club $8; etc.).
+Product Detail Page: Dynamic route for individual products. Show enlarged image, details, price, quantity selector, "Add to Cart". Below, a reviews section (list existing reviews with ratings, comments, dates). After "purchase", show a review form (rating 1-5 stars, comment, name field).
+Cart Page: List added items with images, names, quantities (editable), prices, subtotals. Buttons to remove items, clear cart. Show total price and "Proceed to Order" button.
+Order Page: Simple form for guest details (name, email, phone, address). On submit, simulate order placement (save to MongoDB, clear cart, show confirmation with order ID). After success, enable reviews for ordered products (use localStorage to track ordered product IDs).
+Reviews: Integrated in product detail; only show form if product was "purchased" (check localStorage).
+Navigation: Sticky navbar with logo, links to Home, Cart (with item count badge), Orders. Footer with cafe info.
+Database: Connect to MongoDB Atlas (use env var for URI). Models: Product (name, desc, price, category, image, reviews array), Order (items array, total, customer info).
+Additional: Use react-hot-toast for notifications. Server actions for mutations (order placement, review submission). Seed initial products on startup.
+Style: Cafe-themed—warm gradients, rounded corners, hover effects. Ensure fast loading, SEO-friendly with Next.js SSR.
