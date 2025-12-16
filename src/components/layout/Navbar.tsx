@@ -40,8 +40,8 @@ export function Navbar() {
           <div className="bg-primary p-2 rounded-full text-white group-hover:scale-110 transition-transform">
             <Coffee size={24} />
           </div>
-          <span className="font-serif text-xl font-bold tracking-tight text-foreground">
-            Cozy Brew
+          <span className="font-serif text-xl font-bold tracking-tight text-foreground text-white">
+            BrewBite Cafe
           </span>
         </Link>
 
@@ -51,7 +51,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
+              className={`text-sm font-medium transition-colors hover:text-primary text-white ${
                 pathname === link.href
                   ? "text-primary font-bold"
                   : "text-muted-foreground"
@@ -67,9 +67,9 @@ export function Navbar() {
             href="/cart"
             className="relative p-2 hover:bg-secondary/50 rounded-full transition-colors cursor-pointer"
           >
-            <ShoppingBag size={24} />
+            <ShoppingBag size={24} color="white" />
             {cartCount > 0 && (
-              <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 bg-primary text-primary-foreground animate-in zoom-in">
+              <Badge className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 bg-primary text-primary-foreground animate-in zoom-in text-shadow-white">
                 {cartCount}
               </Badge>
             )}

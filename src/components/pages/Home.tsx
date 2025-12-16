@@ -86,7 +86,7 @@ export default function Home() {
           <Input
             type="text"
             placeholder="Search for coffee, sandwiches, treats..."
-            className="border-none shadow-none focus-visible:ring-0 bg-transparent text-lg h-12"
+            className="border-none shadow-none focus-visible:ring-0 bg-transparent text-lg h-12 text-shadow-white"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
