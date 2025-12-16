@@ -25,8 +25,8 @@ export default function Cart() {
             Your cart is empty
           </h1>
           <p className="text-muted-foreground mb-8 max-w-md">
-            Looks like you haven't added anything to your cart yet. Browse our
-            menu to find your favorites.
+            Looks like you haven&apos;t added anything to your cart yet. Browse
+            our menu to find your favorites.
           </p>
           <Link
             href="/"

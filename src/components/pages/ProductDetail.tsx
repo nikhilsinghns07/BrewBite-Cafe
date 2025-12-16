@@ -242,7 +242,7 @@ export default function ProductDetail({ id }: { id: string }) {
                     </div>
                   </div>
                   <p className="text-muted-foreground leading-relaxed pl-[52px]">
-                    "{review.comment}"
+                    &quot;{review.comment}&quot;
                   </p>
                 </div>
               ))

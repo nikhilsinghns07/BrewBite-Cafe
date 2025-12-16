@@ -72,8 +72,8 @@ export default function Order() {
                 Order Confirmed!
               </h1>
               <p className="text-muted-foreground mb-6">
-                Thank you for your order. We're preparing your delicious meal
-                now.
+                Thank you for your order. We&apos;re preparing your delicious
+                meal now.
               </p>
 
               <div className="bg-muted p-4 rounded-lg w-full mb-8 border border-border">
